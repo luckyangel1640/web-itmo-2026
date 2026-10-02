@@ -6,6 +6,7 @@
     color: var(--black-color);
     font-family: Verdana, sans-serif;
     font-size: 16px;
+    --search-background-color: #f4f4f4;
 }
 
 html {
@@ -124,3 +125,206 @@ aside section .footer a {
 aside section .footer a:after {
     content: " →";
 }
+
+header nav {
+    position: relative;
+}
+
+header nav .search {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+header nav .search input {
+    padding-left: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--search-background-color)
+        url("../img/search-16x16.png") no-repeat 2px center;
+}
+
+header nav .search input:focus {
+    border-color: #80a8ff;
+    outline: 1px solid #80a8ff;
+}
+
+main .datatable .caption {
+    padding: 0.25rem 0.5rem;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: #e1e1e1;
+    font-size: 0.8rem;
+}
+
+main .datatable table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+main .datatable th,
+main .datatable td {
+    border: 1px solid #e1e1e1;
+    padding: 0.375rem 0.5rem;
+}
+
+main .datatable tbody tr:nth-child(2n-1) {
+    background: #f8f8f8;
+}
+
+main > section + section {
+    margin-top: 1rem;
+}
+
+main article .title {
+    color: var(--caption-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+main article .information {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+main article .body {
+    margin-top: 1rem;
+    padding-left: 0.75rem;
+    border-left: 0.25rem solid var(--border-color);
+}
+
+main article .body p:last-child {
+    margin-bottom: 0;
+}
+
+main article .attachment {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+main article .attachment li {
+    padding-left: 20px;
+    margin-bottom: 0.5rem;
+    background: url("../img/paperclip-16x16.png") no-repeat left center;
+}
+
+main article .footer {
+    position: relative;
+    padding: 0.375rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    line-height: 22px;
+}
+
+main article .footer .left {
+    height: 22px;
+}
+
+main article .footer .right {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+main article .footer img {
+    vertical-align: middle;
+}
+
+main article .positive-score {
+    color: green;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+main .login-form-box {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+main .login-form-box .header {
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--caption-color);
+    font-weight: bold;
+}
+
+main .login-form-box .body {
+    padding: 1.5rem 0.25rem 0.25rem;
+}
+
+main .login-form-box .field {
+    position: relative;
+    padding-left: 11rem;
+}
+
+main .login-form-box .field + .field {
+    margin-top: 1.5rem;
+}
+
+main .login-form-box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    line-height: 1.5rem;
+    text-align: right;
+}
+
+main .login-form-box .value input {
+    display: block;
+    width: 15rem;
+}
+
+main .login-form-box .error {
+    color: red;
+    font-size: 0.75rem;
+}
+
+main .login-form-box .checkbox-field,
+main .login-form-box .button-field {
+    margin-left: 11rem;
+}
+
+main .login-form-box .checkbox-field {
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+main .login-form-box .checkbox-field input {
+    margin: 0;
+    vertical-align: middle;
+}
+
+main .login-form-box .button-field {
+    margin-top: 2rem;
+}
+
+main .login-form-box .button-field input {
+    width: 6rem;
+    height: 1.5rem;
+}
+
+main .login-form-box .links {
+    margin-top: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+main .login-form-box .footer {
+    overflow: auto;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+}
+
+main .login-form-box .footer a {
+    float: right;
+    margin-left: 1rem;
+}
+
