@@ -7,6 +7,11 @@
     font-family: Verdana, sans-serif;
     font-size: 16px;
     --search-background-color: #f4f4f4;
+    --search-border-color: #80a8ff;
+    --datatable-color: #e1e1e1;
+    --blog-positive-color: green;
+    --blog-info-color: gray;
+    --login-form-error-color: red;
 }
 
 html {
@@ -144,15 +149,15 @@ header nav .search input {
 }
 
 header nav .search input:focus {
-    border-color: #80a8ff;
-    outline: 1px solid #80a8ff;
+    border-color: var(--search-border-color);
+    outline: 1px solid var(--search-border-color);
 }
 
 main .datatable .caption {
     padding: 0.25rem 0.5rem;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
-    background: #e1e1e1;
+    background: var(--datatable-color);
     font-size: 0.8rem;
 }
 
@@ -165,7 +170,7 @@ main .datatable table {
 
 main .datatable th,
 main .datatable td {
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--datatable-color);
     padding: 0.375rem 0.5rem;
 }
 
@@ -184,7 +189,7 @@ main article .title {
 }
 
 main article .information {
-    color: gray;
+    color: var(blog-info-color);
     font-size: 0.8rem;
 }
 
@@ -234,13 +239,15 @@ main article .footer img {
 }
 
 main article .positive-score {
-    color: green;
+    color: var(--blog-positive-color);
     font-size: 1.125rem;
     font-weight: bold;
 }
 
 main .login-form-box {
-    width: 50%;
+    width: 30rem;
+    max-width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     border: 1px solid var(--border-color);
     border-top-left-radius: var(--border-radius);
@@ -282,7 +289,7 @@ main .login-form-box .value input {
 }
 
 main .login-form-box .error {
-    color: red;
+    color: var(--login-form-error-color);
     font-size: 0.75rem;
 }
 
